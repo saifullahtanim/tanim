@@ -1,0 +1,21 @@
+export const siteMetadata = {
+  title: "Saifulla Tanim portfolio",
+  author: "Saifulla Tanim",
+  headerTitle: "Saifulla Tanim",
+  description:
+    "Frontend developer learning backend technologies and building real-world projects using JavaScript, React, Next.js, Python, Java, and PHP.",
+  language: "en-us",
+  theme: "light",
+  siteName: "tanim.unaux.com",
+  siteUrl: "https://tanim.unaux.com",
+  siteRepo: "https://github.com/saifullahtanim",
+  siteLogo: "/favicon.ico",
+  image: "/static/homepage.png",
+  twitterImage: "/static/homepage.png",
+  socialBanner: "/static/homepage.png",
+  email: "hello.tanim.bd@gmail.com",
+  github: "https://github.com/saifullahtanim",
+  facebook: "https://www.facebook.com/iam.saifullatanim02",
+  linkedin: "https://www.linkedin.com/in/saifullatanim/",
+  locale: "en-US",
+};
