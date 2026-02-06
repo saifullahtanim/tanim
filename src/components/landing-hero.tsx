@@ -35,9 +35,9 @@ export default function LandingHero() {
               <FadeUp key="title-main" duration={0.6}>
                 <h1
                   className="
-                    bg-accent bg-clip-text py-2
-                    text-5xl font-bold text-transparent
-                    whitespace-nowrap leading-tight
+                    whitespace-nowrap bg-accent bg-clip-text
+                    py-2 text-5xl font-bold
+                    leading-tight text-transparent
                     sm:text-6xl md:text-7xl xl:text-8xl
                   "
                 >
@@ -58,22 +58,22 @@ export default function LandingHero() {
                   focused on building modern, responsive, and user-friendly web
                   interfaces. I specialize in crafting clean UI, smooth user
                   experiences, and performance-optimized frontend applications
-                  using{" "}
-                  <span className="font-semibold text-accent">React</span>,{" "}
-                  <span className="font-semibold text-accent">Next.js</span>,{" "}
+                  using <span className="font-semibold text-accent">React</span>
+                  , <span className="font-semibold text-accent">Next.js</span>,{" "}
                   <span className="font-semibold text-accent">JavaScript</span>,{" "}
                   <span className="font-semibold text-accent">TypeScript</span>,
                   and{" "}
                   <span className="font-semibold text-accent">
                     Tailwind CSS
-                  </span>.
+                  </span>
+                  .
                 </p>
               </FadeUp>
             </AnimatePresence>
           </div>
 
           {/* IMAGE (SMALL) */}
-          <div className="w-full lg:w-1/4 flex justify-center">
+          <div className="flex w-full justify-center lg:w-1/4">
             <AnimatePresence>
               <FadeUp key="hero-image" duration={0.6} delay={0.2}>
                 <Image

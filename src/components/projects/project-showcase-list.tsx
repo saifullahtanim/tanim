@@ -33,7 +33,7 @@ export default function ProjectShowcaseList(props: ProjectShowcaseListProps) {
           "hidden font-semibold transition-colors duration-300 lg:block lg:text-4xl xl:text-5xl",
           props.activeProject === props.data.index
             ? "text-accent"
-            : "text-accent/70"
+            : "text-accent/70",
         )}
       >
         {props.data.index + 1}.
@@ -52,14 +52,14 @@ export default function ProjectShowcaseList(props: ProjectShowcaseListProps) {
               "hidden font-semibold transition-colors duration-300 lg:block lg:text-4xl xl:text-5xl",
               props.activeProject === props.data.index
                 ? "text-accent"
-                : "text-accent/70"
+                : "text-accent/70",
             )}
           >
             {props.data.title}
           </span>
 
           {/* ✅ TITLE (Mobile/Tablet smaller) */}
-          <span className="text-2xl font-semibold text-accent transition-colors duration-300 hover:-underline-offset-1 hover:underline sm:text-3xl md:text-4xl lg:hidden">
+          <span className="hover:-underline-offset-1 text-2xl font-semibold text-accent transition-colors duration-300 hover:underline sm:text-3xl md:text-4xl lg:hidden">
             {props.data.title}
           </span>
 
@@ -67,7 +67,7 @@ export default function ProjectShowcaseList(props: ProjectShowcaseListProps) {
           <span
             className={classNames(
               "absolute -bottom-1 left-0 hidden h-1 origin-left rounded-lg bg-accent transition-[width] duration-300 group-hover:w-full lg:block",
-              props.activeProject === props.data.index ? "w-full" : "w-0"
+              props.activeProject === props.data.index ? "w-full" : "w-0",
             )}
           ></span>
         </Link>

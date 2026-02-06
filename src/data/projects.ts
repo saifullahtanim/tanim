@@ -50,8 +50,7 @@ export const PROJECTS_CARD: ProjectCardProps[] = [
     ],
     description:
       "An AI-powered smart library management system featuring CRUD operations, intelligent search, and interactive visualization.",
-    sourceCodeHref:
-      "https://github.com/saifullahtanim/Smart-Library-System",
+    sourceCodeHref: "https://github.com/saifullahtanim/Smart-Library-System",
   },
 
   {
@@ -94,8 +93,7 @@ export const PROJECTS_CARD: ProjectCardProps[] = [
     ],
     description:
       "A bookstore management system with CRUD features built using PHP and MySQL.",
-    sourceCodeHref:
-      "https://github.com/saifullahtanim/bookstore",
+    sourceCodeHref: "https://github.com/saifullahtanim/bookstore",
   },
 
   {

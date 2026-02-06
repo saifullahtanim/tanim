@@ -48,5 +48,4 @@ export const EXPERIENCE: ExperienceShowcaseListItemProps[] = [
     description:
       "Built multiple practice projects to strengthen core concepts of JavaScript, HTML, CSS, and React. Explored component-based architecture, UI animations with Framer Motion, and modern frontend best practices.",
   },
-
 ];

@@ -53,11 +53,10 @@ export default function Home() {
       <LandingHero />
       <SkillsShowcase skills={SKILLS_DATA} />
 
-{/* GAP CONTROLLER */}
-<div className="-mt-32" />
+      {/* GAP CONTROLLER */}
+      <div className="-mt-32" />
 
-<ProjectShowcase projects={PROJECT_SHOWCASE} />
-
+      <ProjectShowcase projects={PROJECT_SHOWCASE} />
     </>
   );
 }

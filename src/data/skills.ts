@@ -38,7 +38,7 @@ export const SKILLS_DATA: SkillsShowcaseProps["skills"] = [
 
       // Extra (project based)
       { name: "C", icon: CSvg },
-      { name: "C++", icon: CppSvg },   // ✅ fixed
+      { name: "C++", icon: CppSvg }, // ✅ fixed
       { name: "Java", icon: JavaSvg },
       { name: "Arduino", icon: ArduinoSvg },
       { name: "PHP", icon: PhpSvg },
@@ -63,8 +63,6 @@ export const SKILLS_DATA: SkillsShowcaseProps["skills"] = [
   },
   {
     sectionName: "Tools",
-    skills: [
-      { name: "Git", icon: GitSvg },
-    ],
+    skills: [{ name: "Git", icon: GitSvg }],
   },
 ];

@@ -31,7 +31,6 @@ export default function ProjectShowcase(props: ProjectShowcaseProps) {
 
   return (
     <section className="overflow-hidden px-6 py-16 sm:px-14 md:px-20">
-
       <div className="relative mx-auto max-w-7xl">
         <div className="relative right-0 top-0 hidden lg:block">
           <AnimatePresence>
