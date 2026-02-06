@@ -4,29 +4,24 @@ import { FaFacebookF } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-transparent px-4 sm:px-6 lg:px-8 py-10">
-
+    <footer className="w-full bg-transparent px-4 py-10 sm:px-6 lg:px-8">
       {/* ================= CONTACT CARD ================= */}
       {/* 🔥 FULL WIDTH LOOK */}
       <div className="mx-auto max-w-6xl lg:max-w-7xl">
- 
-
-<div
-  className="
+        <div
+          className="
     rounded-3xl
     border border-accent/20
     bg-accent
-    text-white
+    px-10
+    py-16
     text-center
-    shadow-xl
 
-px-10 py-16
+text-white shadow-xl
 sm:px-16 sm:py-20
 
   "
->
-
-
+        >
           {/* 🔥 BIGGER BADGE */}
           <div className="flex justify-center">
             <span
@@ -34,8 +29,8 @@ sm:px-16 sm:py-20
                 inline-flex items-center
                 rounded-full
                 bg-white
-                px-12 py-3
-                text-sm
+                px-20 py-6 
+                text-lg
                 font-bold
                 uppercase
                 tracking-[0.35em]
@@ -61,13 +56,11 @@ sm:px-16 sm:py-20
 
       {/* ================= FOOTER BOTTOM ================= */}
       <div className="mx-auto mt-8 flex max-w-[1500px] flex-col items-center justify-between gap-6 border-t border-accent/20 pt-6 text-center md:flex-row">
-
         <p className="text-sm text-foreground/70">
           ©2026 Saifulla Tanim. All rights reserved.
         </p>
 
         <div className="flex items-center gap-5">
-
           <a
             href="https://github.com/saifullahtanim"
             target="_blank"
@@ -94,7 +87,6 @@ sm:px-16 sm:py-20
           >
             <LinkedinIcon className="h-6 w-6 text-accent hover:text-accent-foreground" />
           </a>
-
         </div>
       </div>
     </footer>
