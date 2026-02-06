@@ -7,18 +7,19 @@ export default function Footer() {
     <footer className="w-full bg-transparent px-4 py-10 sm:px-6 lg:px-8">
       {/* ================= CONTACT CARD ================= */}
       {/* 🔥 FULL WIDTH LOOK */}
-      <div className="mx-auto max-w-6xl lg:max-w-7xl">
+      <div className="mx-auto max-w-5xl lg:max-w-6xl">
+
         <div
           className="
     rounded-3xl
     border border-accent/20
     bg-accent
-    px-10
-    py-16
+    px-8 
+    py-12
     text-center
 
 text-white shadow-xl
-sm:px-16 sm:py-20
+sm:px-12 sm:py-14
 
   "
         >
