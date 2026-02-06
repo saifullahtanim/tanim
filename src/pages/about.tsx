@@ -13,13 +13,13 @@ export default function About() {
     <>
       <NextSeo
         title="About Saifulla Tanim | Frontend Developer"
-        description="I’m Saifulla Tanim, a passionate Frontend Developer focused on building clean, responsive, and user-friendly web applications. I enjoy turning ideas into real products using modern web technologies."
+        description="I’m Saifulla Tanim, a passionate Frontend Developer focused on building clean, responsive, and user-friendly web applications."
         canonical={`${siteMetadata.siteUrl}/about`}
         openGraph={{
           url: `${siteMetadata.siteUrl}/about`,
           title: "About Saifulla Tanim | Frontend Developer",
           description:
-            "Discover the journey of Saifulla Tanim — a Frontend Developer passionate about clean UI, modern web technologies, and crafting smooth user experiences.",
+            "Discover the journey of Saifulla Tanim — a Frontend Developer passionate about clean UI, modern web technologies, and smooth user experiences.",
           images: [
             {
               url: `${siteMetadata.siteUrl}${siteMetadata.twitterImage}`,
@@ -32,26 +32,32 @@ export default function About() {
         twitter={{
           cardType: "summary_large_image",
         }}
-        additionalMetaTags={[
-          {
-            property: "keywords",
-            content:
-              "Saifulla Tanim, Frontend Developer, React Developer, Next.js Developer, Web Developer Portfolio, JavaScript, HTML, CSS, UI Developer, Modern Web Development",
-          },
-        ]}
       />
 
-      {/* Hero Section (Name, Bio, Dhaka Bangladesh) */}
-      <AboutHero />
+      {/* MAIN RESPONSIVE WRAPPER */}
+      <main className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        {/* Hero Section */}
+        <section className="pt-10 sm:pt-14">
+          <AboutHero />
+        </section>
 
-      {/* CV Section (Between Dhaka & Experience) */}
-      <CVCard />
+        {/* CV Section */}
+        <section className="mt-4 sm:mt-6">
+  <CVCard />
+</section>
 
-      {/* Experience */}
-      <ExperienceShowcaseList title="Experience" details={EXPERIENCE} />
 
-      {/* Education */}
-      <ExperienceShowcaseList title="Education" details={EDUCATION} />
+        {/* Experience */}
+        <section className="mt-14 sm:mt-20">
+          <ExperienceShowcaseList title="Experience" details={EXPERIENCE} />
+        </section>
+
+        {/* Education */}
+        <section className="mt-10 sm:mt-14 pb-6 sm:pb-10">
+  <ExperienceShowcaseList title="Education" details={EDUCATION} />
+</section>
+
+      </main>
     </>
   );
 }

@@ -8,18 +8,18 @@ export default function Projects() {
   return (
     <>
       <NextSeo
-        title="Projects by Saifulla Tanim | Frontend Developer Portfolio"
-        description="Explore frontend projects by Saifulla Tanim, a Frontend Developer focused on building responsive, user-friendly, and visually polished web applications using modern technologies."
+        title="Projects | Saifulla Tanim"
+        description="Explore frontend projects by Saifulla Tanim focused on clean UI, responsive design, and modern web technologies."
         canonical={`${siteMetadata.siteUrl}/projects`}
         openGraph={{
           url: `${siteMetadata.siteUrl}/projects`,
-          title: "Frontend Projects by Saifulla Tanim",
+          title: "Projects | Saifulla Tanim",
           description:
-            "A collection of frontend projects by Saifulla Tanim showcasing skills in React.js, Next.js, JavaScript, TypeScript, UI/UX design, and performance-focused web development.",
+            "A collection of frontend projects showcasing React, Next.js, TypeScript, and modern UI/UX practices.",
           images: [
             {
               url: `${siteMetadata.siteUrl}${siteMetadata.twitterImage}`,
-              alt: "Saifulla Tanim - Frontend Developer Portfolio",
+              alt: "Saifulla Tanim Projects",
             },
           ],
           siteName: siteMetadata.siteName,
@@ -28,47 +28,62 @@ export default function Projects() {
         twitter={{
           cardType: "summary_large_image",
         }}
-        additionalMetaTags={[
-          {
-            property: "keywords",
-            content:
-              "Saifulla Tanim, Frontend Developer, Frontend Portfolio, React Developer, Next.js Developer, JavaScript, TypeScript, UI UX, Responsive Design, Web Development Projects",
-          },
-        ]}
       />
 
-      <section className="mx-auto mb-40 mt-6 w-full gap-20 px-6 sm:mt-12 sm:px-14 md:px-20">
+      {/* MAIN WRAPPER */}
+      <section
+        className="
+          mx-auto
+          w-full
+          px-4
+          pt-8
+          pb-20
+          sm:px-8
+          sm:pt-12
+          sm:pb-24
+          lg:px-16
+        "
+      >
         <div className="mx-auto max-w-7xl">
-          <h1 className="text-2xl font-semibold text-foreground md:text-4xl">
-            Projects
+          {/* TITLE */}
+          <h1 className="text-3xl font-bold text-accent sm:text-4xl">
+            My Projects
           </h1>
 
-          <div className="my-2 max-w-3xl">
-            <span className="text-sm text-muted-foreground">
-              A selection of frontend projects that reflect my passion for clean
-              UI, responsive layouts, and performance-focused web development.
-            </span>
-          </div>
+          {/* SUBTITLE */}
+          <p className="mt-3 max-w-3xl text-sm text-zinc-600 dark:text-zinc-400 sm:text-base">
+            A selection of frontend projects that reflect my passion for clean
+            UI, responsive layouts, and performance-focused web development.
+          </p>
 
-          <div className="mt-8 grid grid-cols-1 gap-x-6 gap-y-10 lg:grid-cols-2">
+          {/* PROJECT GRID */}
+          <div className="mt-10 grid grid-cols-1 gap-6 sm:gap-8 lg:grid-cols-2">
             {PROJECTS_CARD.map((card, index) => (
               <ProjectCard key={index} {...card} />
             ))}
           </div>
 
-          <div className="mx-auto mt-16 max-w-5xl text-center text-foreground md:mt-28">
-            <span className="text-xl font-bold md:text-2xl">
+          {/* BOTTOM NOTE */}
+          <div className="mx-auto mt-14 max-w-4xl text-center sm:mt-20">
+            <p className="text-base font-semibold text-zinc-800 dark:text-zinc-200 sm:text-xl">
               I am currently building new projects and learning backend
               development to expand my skill set beyond frontend.
-            </span>
+            </p>
 
-            <p className="mt-8 text-base md:text-xl">
+            <p className="mt-6 text-sm sm:text-lg">
               Visit my GitHub to explore more projects{" "}
               <a
                 href={`${siteMetadata.github}?tab=repositories`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="font-semibold text-accent underline underline-offset-2 hover:text-accent/70"
+                className="
+                  font-semibold
+                  text-accent
+                  underline
+                  underline-offset-4
+                  transition
+                  hover:text-accent/70
+                "
               >
                 GitHub
               </a>
