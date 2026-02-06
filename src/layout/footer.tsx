@@ -4,37 +4,37 @@ import { FaFacebookF } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-transparent px-4 py-10 sm:px-6 lg:px-8">
+    <footer className="w-full bg-transparent px-4 py-6 sm:px-6 lg:px-8">
+
       {/* ================= CONTACT CARD ================= */}
-      {/* 🔥 FULL WIDTH LOOK */}
-      <div className="mx-auto max-w-5xl lg:max-w-6xl">
+      <div className="mx-auto max-w-5xl">
 
         <div
           className="
-    rounded-3xl
-    border border-accent/20
-    bg-accent
-    px-8 
-    py-12
-    text-center
+            rounded-3xl
+            border border-accent/20
+            bg-accent
+            text-white
+            text-center
+            shadow-xl
 
-text-white shadow-xl
-sm:px-12 sm:py-14
-
-  "
+            px-8 py-20
+            sm:px-12 sm:py-17
+          "
         >
-          {/* 🔥 BIGGER BADGE */}
+
+          {/* CONTACT BADGE */}
           <div className="flex justify-center">
             <span
               className="
                 inline-flex items-center
                 rounded-full
                 bg-white
-                px-20 py-6 
-                text-lg
+                px-16 py-5
+                text-base
                 font-bold
                 uppercase
-                tracking-[0.35em]
+                tracking-[0.3em]
                 text-accent
                 shadow-sm
               "
@@ -43,20 +43,22 @@ sm:px-12 sm:py-14
             </span>
           </div>
 
-          {/* 🔥 HEADING (unchanged size) */}
+          {/* Heading */}
           <h2 className="mt-8 text-3xl font-bold leading-snug sm:text-4xl lg:text-5xl">
             Want to hire me for your next project ?
           </h2>
 
-          {/* 🔥 BUTTON (same) */}
+          {/* Button */}
           <div className="mt-10 flex justify-center">
             <ContactButton />
           </div>
+
         </div>
       </div>
 
       {/* ================= FOOTER BOTTOM ================= */}
       <div className="mx-auto mt-8 flex max-w-[1500px] flex-col items-center justify-between gap-6 border-t border-accent/20 pt-6 text-center md:flex-row">
+
         <p className="text-sm text-foreground/70">
           ©2026 Saifulla Tanim. All rights reserved.
         </p>
@@ -90,6 +92,7 @@ sm:px-12 sm:py-14
           </a>
         </div>
       </div>
+
     </footer>
   );
 }
