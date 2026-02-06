@@ -8,7 +8,8 @@ export default function Footer() {
 
       {/* ================= CONTACT CARD ================= */}
       {/* 🔥 FULL WIDTH LOOK */}
-      <div className="mx-auto max-w-5xl">  
+      <div className="mx-auto max-w-6xl lg:max-w-7xl">
+ 
 
 <div
   className="
@@ -19,8 +20,9 @@ export default function Footer() {
     text-center
     shadow-xl
 
-    px-8 py-10
-    sm:px-12 sm:py-12
+px-10 py-16
+sm:px-16 sm:py-20
+
   "
 >
 
