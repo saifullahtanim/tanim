@@ -1,7 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import { ValidationError } from "yup";
 
-import { mailValidationSchema } from "@/components/contact-form/contact-form";
 import { sendMail } from "@/utility/sendMail";
 
 export type MailRequestBody = {
