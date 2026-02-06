@@ -7,7 +7,7 @@ import { type ProjectShowcaseListItem } from "@/components/projects/project-show
 export const PROJECT_SHOWCASE: ProjectShowcaseListItem[] = [
   {
     index: 0,
-    title: "Smart Library",
+    title: "Smart Library System",
     href: "/projects",
     tags: ["Python", "AI", "CRUD", "Search"],
     image: {
@@ -17,7 +17,7 @@ export const PROJECT_SHOWCASE: ProjectShowcaseListItem[] = [
   },
   {
     index: 1,
-    title: "Student MS",
+    title: "Student Management",
     href: "/projects",
     tags: ["Java", "Swing", "Desktop", "PDF"],
     image: {
@@ -27,7 +27,7 @@ export const PROJECT_SHOWCASE: ProjectShowcaseListItem[] = [
   },
   {
     index: 2,
-    title: "Restaurant MS",
+    title: "Restaurant System",
     href: "/projects",
     tags: ["Python", "Tkinter", "SQLite"],
     image: {

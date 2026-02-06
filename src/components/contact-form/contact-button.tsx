@@ -1,11 +1,13 @@
-import { useEffect, useRef, useState } from "react";
+"use client";
 
+import { useEffect, useRef, useState } from "react";
 import { MailIcon } from "lucide-react";
 
 import FloatingMailButton, {
   floatingMailButtonoptions,
 } from "@/components/contact-form/floating-mail-button";
-import ContactFormModal from "@/components/contact-form/contact-form-modal";
+
+import ContactPopupModal from "@/components/contact-form/contact-popup-modal";
 
 export default function ContactButton() {
   const refSendBtn = useRef<HTMLButtonElement>(null);
@@ -13,41 +15,50 @@ export default function ContactButton() {
   const [isBtnVisible, setIsBtnVisible] = useState(false);
   const [isOpenModal, setIsOpenModal] = useState(false);
 
-  const observerCallback = (entries: IntersectionObserverEntry[]) => {
-    const [entry] = entries;
-    setIsBtnVisible(!entry.isIntersecting);
-  };
-
+  /* ---------------------------
+     Floating hide/show logic
+  ---------------------------- */
   useEffect(() => {
     const btn = refSendBtn.current;
+    if (!btn) return;
+
     const observer = new IntersectionObserver(
-      observerCallback,
-      floatingMailButtonoptions,
+      ([entry]) => {
+        // যখন bottom button দেখা যাবে → floating hide
+        setIsBtnVisible(!entry.isIntersecting);
+      },
+      floatingMailButtonoptions
     );
-    if (btn) observer.observe(btn);
-    return () => {
-      if (btn) observer.unobserve(btn);
-    };
-  }, [refSendBtn]);
+
+    observer.observe(btn);
+
+    return () => observer.disconnect();
+  }, []);
 
   return (
     <>
+      {/* Floating Mail Button */}
       {isBtnVisible && !isOpenModal && (
         <FloatingMailButton openModal={setIsOpenModal} />
       )}
 
+      {/* Send Message Button (STYLE SAME) */}
       <button
         ref={refSendBtn}
-        className="inline-flex items-center gap-2 rounded-md bg-background px-3 py-2 text-accent transition-transform duration-150 focus-within:scale-[1.05] hover:scale-[1.05] hover:bg-foreground hover:text-background"
         onClick={() => setIsOpenModal(true)}
+        className="inline-flex items-center gap-2 rounded-md bg-background px-3 py-2 text-accent transition-transform duration-150 focus-within:scale-[1.05] hover:scale-[1.05] hover:bg-foreground hover:text-background"
       >
         <MailIcon className="h-6 w-6 sm:h-7 sm:w-7 lg:h-9 lg:w-9" />
         <span className="text-base font-semibold sm:text-lg lg:text-xl">
-          Send Message
+          GET IN TOUCH
         </span>
       </button>
 
-      <ContactFormModal showModal={isOpenModal} setShowModal={setIsOpenModal} />
+      {/* Small Contact Popup */}
+      <ContactPopupModal
+        showModal={isOpenModal}
+        setShowModal={setIsOpenModal}
+      />
     </>
   );
 }
