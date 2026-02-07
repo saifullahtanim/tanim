@@ -1,19 +1,22 @@
-import { ReactNode } from "react";
+"use client";
 
+import { ReactNode } from "react";
 import { motion } from "framer-motion";
 
 export interface FadeUpProps {
   children: ReactNode;
-  duration: number;
+  duration?: number;
   delay?: number;
   whileInView?: boolean;
+  className?: string;
 }
 
 export default function FadeUp({
   children,
-  duration,
-  delay,
+  duration = 0.5,
+  delay = 0,
   whileInView = false,
+  className = "",
 }: FadeUpProps) {
   const animation = {
     opacity: 1,
@@ -24,11 +27,14 @@ export default function FadeUp({
       delay,
     },
   };
+
   return (
     <motion.div
-      initial={{ y: 200, opacity: 0 }}
-      whileInView={whileInView ? animation : {}}
-      animate={!whileInView ? animation : {}}
+      className={className}
+      initial={{ y: 60, opacity: 0 }}
+      whileInView={whileInView ? animation : undefined}
+      animate={!whileInView ? animation : undefined}
+      viewport={{ once: true }}
     >
       {children}
     </motion.div>

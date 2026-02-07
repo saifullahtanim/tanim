@@ -1,10 +1,11 @@
-import { ReactNode } from "react";
+"use client";
 
+import { ReactNode } from "react";
 import { motion } from "framer-motion";
 
 export interface FadeRightProps {
   children: ReactNode;
-  duration: number;
+  duration?: number;
   delay?: number;
   className?: string;
   whileInView?: boolean;
@@ -12,9 +13,9 @@ export interface FadeRightProps {
 
 export default function FadeRight({
   children,
-  duration,
-  delay,
-  className,
+  duration = 0.5,
+  delay = 0,
+  className = "",
   whileInView = false,
 }: FadeRightProps) {
   const animation = {
@@ -26,12 +27,14 @@ export default function FadeRight({
       delay,
     },
   };
+
   return (
     <motion.div
-      initial={{ x: -100, opacity: 0 }}
+      className={className}
+      initial={{ x: -40, opacity: 0 }}
       whileInView={whileInView ? animation : undefined}
       animate={!whileInView ? animation : undefined}
-      className={className}
+      viewport={{ once: true }}
     >
       {children}
     </motion.div>
