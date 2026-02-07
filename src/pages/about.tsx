@@ -37,7 +37,7 @@ export default function About() {
       {/* MAIN RESPONSIVE WRAPPER */}
       <main className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Hero Section */}
-        <section className="pt-10 sm:pt-14">
+        <section className="pt-0">
           <AboutHero />
         </section>
 
