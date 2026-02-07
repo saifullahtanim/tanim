@@ -8,7 +8,7 @@
 
 ## 📄 License
 
-> 🛡️ This project is licensed under the **MIT License**  
+> This project is licensed under the **MIT License**  
 > © 2026 Saifulla Tanim
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-22c55e?style=for-the-badge&logo=opensourceinitiative&logoColor=white)](LICENSE)
