@@ -37,7 +37,7 @@ export default function Home() {
           {
             property: "keywords",
             content:
-              "Full Stack Developer, Web Developer, React Developer, Next.js Developer, JavaScript, TypeScript, HTML, CSS, Tailwind CSS, Portfolio, UI/UX, Frontend Developer, Backend Developer",
+              "Frontend Developer, React, Next.js, TypeScript, Tailwind CSS, JavaScript, HTML, CSS, UI/UX, Portfolio",
           },
         ]}
       />
