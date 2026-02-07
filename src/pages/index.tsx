@@ -12,14 +12,15 @@ export default function Home() {
   return (
     <>
       <NextSeo
-        title="Saifulla Tanim | Full Stack Developer"
-        description="Explore the professional portfolio of Saifulla Tanim, a Full Stack Web Developer passionate about building modern, high-performance, and user-focused web applications."
+        title="Saifulla Tanim | Frontend Web Developer
+"
+        description="I am a passionate Frontend Web Developer focused on building modern, responsive, and user-friendly web interfaces. I specialize in crafting clean UI, smooth user experiences, and performance-optimized frontend applications using React, Next.js, JavaScript, TypeScript, and Tailwind CSS."
         canonical={siteMetadata.siteUrl}
         openGraph={{
           url: siteMetadata.siteUrl,
-          title: "Saifulla Tanim - Full Stack Web Developer",
+          title: "Saifulla Tanim - Frontend Web Developer",
           description:
-            "Discover projects, skills, and experience of Saifulla Tanim — a dedicated Full Stack Web Developer creating clean, scalable, and modern web solutions.",
+            "I am a passionate Frontend Web Developer focused on building modern, responsive, and user-friendly web interfaces. I specialize in crafting clean UI, smooth user experiences, and performance-optimized frontend applications using React, Next.js, JavaScript, TypeScript, and Tailwind CSS.",
           images: [
             {
               url: `${siteMetadata.siteUrl}${siteMetadata.twitterImage}`,
