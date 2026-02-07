@@ -2,6 +2,9 @@
 
 [![Live Site](https://img.shields.io/badge/🌍_Live_Portfolio-Visit_Now-0f766e?style=for-the-badge)](https://tanim-beta.vercel.app/)
 
+## 📄 License
+MIT License © 2026 Saifulla Tanim
+
 ## 🤝 Connect With Me
 
 [![GitHub](https://img.shields.io/badge/GitHub-saifullahtanim-black?style=for-the-badge&logo=github)](https://github.com/saifullahtanim)
